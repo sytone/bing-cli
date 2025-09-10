@@ -84,15 +84,30 @@ $ source ~/.bash_profile
 
 ## Development
 
+### Requirements
+
+- Node.js 18.0.0 or higher
+- npm
+
 ### Testing
 
-```
+```bash
 npm test
 ```
 
+### Linting
+
+```bash
+npm run lint
+```
+
+### Building
+
+No build step required. The package uses modern JavaScript that runs directly on Node.js.
+
 ### Bugs
 
-Please report any bugs [here](https://github.com/scottbea/bing-cli/issues).
+Please report any bugs [here](https://github.com/sytone/bing-cli/issues).
 
 ### Changelog
 

@@ -1,6 +1,11 @@
 *.swp
 .DS_Store
 node_modules/
-npm-debug.log
+npm-debug.log*
 .idea/
 _keys.json
+.env
+.vscode/
+*.log
+.tmp/
+test-*.js
