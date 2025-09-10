@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottbea/bing-cli"
+    "url": "https://github.com/sytone/bing-cli"
   },
   "keywords": [
     "bing",
@@ -27,7 +27,7 @@
   "author": "Scott Beaudreau <sjbeaudreau@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scottbea/bing-cli/issues"
+    "url": "https://github.com/sytone/bing-cli/issues"
   },
   "dependencies": {
     "ansi-escapes": "^7.0.0",
