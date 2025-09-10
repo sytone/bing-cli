@@ -7,7 +7,12 @@
     "bing": "./bin/bing"
   },
   "scripts": {
-    "test": "node_modules/.bin/grunt ci"
+    "test": "mocha test/**/*.js",
+    "lint": "eslint lib test index.js bin/bing",
+    "lint:fix": "eslint lib test index.js bin/bing --fix"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "repository": {
     "type": "git",
@@ -25,29 +30,20 @@
     "url": "https://github.com/scottbea/bing-cli/issues"
   },
   "dependencies": {
-    "ansi-escapes": "^4.2.1",
-    "co": "^4.6.0",
+    "ansi-escapes": "^7.0.0",
+    "axios": "^1.7.7",
     "colors": "^1.4.0",
     "exit": "^0.1.2",
-    "gm": "^1.23.1",
-    "image-info": "0.0.2",
-    "image-to-ascii": "^3.0.12",
     "is-url": "^1.2.4",
-    "iterm2-version": "^4.2.0",
-    "pget": "^0.1.1",
-    "request": "^2.88.0",
-    "resolve": "^1.12.0",
-    "tempfile": "^3.0.0",
-    "underscore": "^1.9.1"
+    "iterm2-version": "^5.0.0",
+    "node-fetch": "^3.3.2",
+    "resolve": "^1.22.8",
+    "sharp": "^0.33.5",
+    "tempfile": "^3.0.0"
   },
   "devDependencies": {
-    "expect.js": "*",
-    "grunt": "*",
-    "grunt-cli": "*",
-    "grunt-complexity": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-mocha-cli": "*",
-    "mocha": "^6.2.2"
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "mocha": "^10.8.2"
   }
 }
